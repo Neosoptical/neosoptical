@@ -8,10 +8,12 @@
   <title>NEOS Optical | Ottica a Chiaravalle (AN)</title>
 
   <meta name="description"
-        content="NEOS Optical, negozio di ottica a Chiaravalle (AN). Ci trovi in Via Maestri del Lavoro 17, Parco La Manifattura.">
+        content="NEOS Optical, negozio di ottica a Chiaravalle (AN), presso il Parco La Manifattura. Occhiali da vista, da sole e servizi ottici.">
 
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://neosoptical.it/">
+
+  <meta name="theme-color" content="#ffffff">
 
   <script type="application/ld+json">
   {
@@ -19,7 +21,8 @@
     "@type": "Optician",
     "name": "NEOS Optical",
     "url": "https://neosoptical.it/",
-    "telephone": "+39 071 994 5179",
+    "image": "https://neosoptical.it/negozio-neos.jpg",
+    "telephone": "+390719945179",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Via Maestri del Lavoro 17",
@@ -32,48 +35,145 @@
   </script>
 
   <style>
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: #ffffff;
-      font-family: Arial, sans-serif;
-      text-align: center;
-      color: #333;
+    * {
+      box-sizing: border-box;
     }
 
-    main {
+    html, body {
+      margin: 0;
+      min-height: 100%;
+    }
+
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color: #26343d;
+    }
+
+    .hero {
+      min-height: 100vh;
+      min-height: 100svh;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      background-image:
+        linear-gradient(
+          to bottom,
+          rgba(0,0,0,0.02) 25%,
+          rgba(0,0,0,0.40) 100%
+        ),
+        url("negozio-neos.jpg");
+      background-position: center;
+      background-size: cover;
       padding: 30px;
     }
 
-    .logo {
-      max-width: 320px;
-      width: 85%;
-      height: auto;
+    .info {
+      width: 100%;
+      max-width: 620px;
+      padding: 35px 40px;
+      margin-bottom: 35px;
+      background: rgba(255,255,255,0.93);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      text-align: center;
+      border-radius: 4px;
+      box-shadow: 0 12px 45px rgba(0,0,0,0.12);
+    }
+
+    .brand {
+      font-size: clamp(30px, 5vw, 46px);
+      font-weight: 300;
+      letter-spacing: 0.18em;
+      margin: 0;
+    }
+
+    .brand span {
+      color: #75bcd0;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      letter-spacing: 0.38em;
+      margin: 10px 0 25px;
+      color: #7795a3;
+    }
+
+    .line {
+      width: 55px;
+      height: 1px;
+      background: #91c8d7;
+      margin: 0 auto 24px;
     }
 
     address {
-      margin-top: 35px;
-      font-size: 17px;
-      line-height: 1.8;
+      font-size: 15px;
+      line-height: 1.9;
       font-style: normal;
+      color: #4a555b;
+    }
+
+    .location {
+      display: inline-block;
+      margin-top: 24px;
+      padding: 12px 24px;
+      border: 1px solid #83bdce;
+      color: #397e94;
+      font-size: 12px;
+      letter-spacing: 0.12em;
+      text-decoration: none;
+      transition: 0.2s ease;
+    }
+
+    .location:hover {
+      background: #83bdce;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      .hero {
+        padding: 16px;
+        background-position: 52% center;
+      }
+
+      .info {
+        padding: 28px 18px;
+        margin-bottom: 12px;
+      }
+
+      .brand {
+        letter-spacing: 0.12em;
+      }
+
+      address {
+        font-size: 14px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <main>
-    <img class="logo"
-         src="logo-neos.png"
-         alt="NEOS Optical - Ottica a Chiaravalle">
+  <main class="hero">
+    <section class="info" aria-label="Informazioni NEOS Optical">
 
-    <address>
-      Via Maestri del Lavoro 17<br>
-      Parco La Manifattura<br>
-      60033 Chiaravalle (AN)
-    </address>
+      <h1 class="brand">NEOS <span>OPTICAL</span></h1>
+      <p class="subtitle">OTTICA · CHIARAVALLE</p>
+
+      <div class="line"></div>
+
+      <address>
+        Via Maestri del Lavoro 17<br>
+        Parco La Manifattura<br>
+        60033 Chiaravalle (AN)
+      </address>
+
+      <a class="location"
+         href="https://www.google.com/maps/search/?api=1&amp;query=NEOS+Optical+Chiaravalle"
+         target="_blank"
+         rel="noopener noreferrer">
+        DOVE SIAMO
+      </a>
+
+    </section>
   </main>
 </body>
 </html>
