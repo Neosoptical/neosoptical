@@ -7,39 +7,39 @@
   <meta name="viewport"
         content="width=device-width, initial-scale=1">
 
-  <title>NEOS Optical | Ottica a Chiaravalle (AN)</title>
+  <title>NÉOS Optical | Ottica a Chiaravalle (AN)</title>
 
   <meta name="description"
-        content="NEOS Optical, negozio di ottica a Chiaravalle (AN). Via Maestri del Lavoro 17. Telefono 071 9945179.">
+        content="NÉOS Optical, negozio di ottica a Chiaravalle (AN). Via Maestri del Lavoro 17, Parco La Manifattura. Controllo della vista, occhiali da vista e da sole, lenti a contatto.">
 
   <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#ffffff">
 
   <link rel="canonical"
         href="https://neosoptical.it/">
 
-  <meta name="theme-color" content="#ffffff">
-
-  <!-- Anteprima social -->
+  <!-- ANTEPRIMA SOCIAL -->
   <meta property="og:type" content="website">
   <meta property="og:title"
-        content="NEOS Optical | Ottica a Chiaravalle">
+        content="NÉOS Optical | Ottica a Chiaravalle">
   <meta property="og:description"
-        content="NEOS Optical - Via Maestri del Lavoro 17, 60033 Chiaravalle (AN).">
+        content="NÉOS Optical - Via Maestri del Lavoro 17, 60033 Chiaravalle (AN).">
   <meta property="og:url"
         content="https://neosoptical.it/">
   <meta property="og:image"
         content="https://neosoptical.it/logo-neos.png">
 
-  <!-- Dati strutturati Google -->
+  <!-- DATI STRUTTURATI GOOGLE -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Optician",
-    "name": "NEOS Optical",
+    "name": "NÉOS Optical",
     "url": "https://neosoptical.it/",
     "logo": "https://neosoptical.it/logo-neos.png",
     "telephone": "+390719945179",
     "email": "info@neosoptical.it",
+    "vatID": "IT03042750426",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Via Maestri del Lavoro 17",
@@ -50,7 +50,40 @@
     },
     "sameAs": [
       "https://www.instagram.com/neosoptical/",
-      "https://www.facebook.com/profile.php?id=61591669449663"
+      "https://www.facebook.com/profile.php?id=61591669449663",
+      "https://maps.app.goo.gl/JctXMoAmDjQ7G8V29"
+    ],
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": "Monday",
+        "opens": "16:00",
+        "closes": "19:30"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:30",
+        "closes": "12:45"
+      },
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "16:30",
+        "closes": "19:30"
+      }
     ]
   }
   </script>
@@ -58,16 +91,20 @@
   <style>
 
     :root {
-      --ice: #8bbfce;
-      --ice-dark: #498da3;
-      --ink: #263942;
-      --muted: #73838a;
-      --line: #e4edf0;
+      --ice: #9bb8c0;
+      --ice-dark: #648e9a;
+      --ink: #202629;
+      --muted: #75858b;
+      --line: #e6edef;
       --white: #ffffff;
     }
 
     * {
       box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
 
     html, body {
@@ -79,6 +116,7 @@
       background: var(--white);
       color: var(--ink);
       font-family: "Helvetica Neue",
+                   "Avenir Next",
                    Arial, sans-serif;
       -webkit-font-smoothing: antialiased;
     }
@@ -89,64 +127,63 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 65px 24px 28px;
+      padding: 55px 24px 25px;
     }
 
     .content {
       width: 100%;
-      max-width: 600px;
+      max-width: 650px;
       margin: auto 0;
       text-align: center;
     }
 
-    /* LOGO ORIGINALE */
+    /* LOGO */
 
     .logo {
       display: block;
       width: min(100%, 380px);
       height: auto;
-      margin: 0 auto 38px;
+      margin: 0 auto 20px;
       object-fit: contain;
     }
 
     /* SOTTOTITOLO */
 
     .eyebrow {
-      margin: 0 0 30px;
+      margin: 0 0 28px;
       color: var(--muted);
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 400;
       letter-spacing: 0.30em;
       text-transform: uppercase;
     }
 
-    /* LINEA DECORATIVA */
+    /* LINEA AZZURRA */
 
     .divider {
-      width: 55px;
+      width: 54px;
       height: 1px;
       background: var(--ice);
-      margin: 0 auto 34px;
+      margin: 0 auto 30px;
     }
 
     /* INDIRIZZO */
 
     address {
-      font-size: 17px;
+      font-size: 16px;
       font-style: normal;
-      line-height: 2;
+      line-height: 1.9;
       font-weight: 300;
-      color: var(--ink);
     }
 
     /* CONTATTI */
 
     .contact {
-      margin-top: 28px;
+      margin-top: 25px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 14px;
+      gap: 12px;
     }
 
     .contact a {
@@ -160,20 +197,18 @@
       color: var(--ice-dark);
     }
 
-    /* PULSANTE GOOGLE MAPS */
+    /* PULSANTE MAPS */
 
     .maps {
       display: inline-block;
-      margin-top: 38px;
-      padding: 15px 34px;
+      margin-top: 34px;
+      padding: 15px 32px;
       border: 1px solid var(--ice);
       color: var(--ice-dark);
-      background: transparent;
       text-decoration: none;
       text-transform: uppercase;
-      letter-spacing: 0.16em;
+      letter-spacing: 0.15em;
       font-size: 11px;
-      font-weight: 500;
       transition: all 0.2s ease;
     }
 
@@ -182,14 +217,38 @@
       color: var(--white);
     }
 
-    /* SOCIAL NETWORK */
+    /* ORARI */
+
+    .hours {
+      margin: 45px auto 0;
+      padding-top: 30px;
+      border-top: 1px solid var(--line);
+      max-width: 370px;
+    }
+
+    .hours h2 {
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.20em;
+      text-transform: uppercase;
+      color: var(--ice-dark);
+      margin: 0 0 20px;
+    }
+
+    .hours p {
+      margin: 8px 0;
+      font-size: 13px;
+      line-height: 1.8;
+      color: var(--muted);
+    }
+
+    /* SOCIAL */
 
     .social {
       display: flex;
       justify-content: center;
-      align-items: center;
       gap: 38px;
-      margin-top: 48px;
+      margin-top: 42px;
     }
 
     .social a {
@@ -213,30 +272,31 @@
     footer {
       width: 100%;
       margin-top: 60px;
-      padding-top: 25px;
+      padding-top: 24px;
       border-top: 1px solid var(--line);
       text-align: center;
       color: var(--muted);
       font-size: 11px;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.10em;
+      line-height: 2;
     }
 
-    /* SMARTPHONE */
+    /* VERSIONE SMARTPHONE */
 
     @media (max-width: 600px) {
 
       .page {
-        padding: 45px 22px 25px;
+        padding: 35px 20px 22px;
       }
 
       .logo {
-        width: min(100%, 290px);
-        margin-bottom: 30px;
+        width: min(100%, 310px);
+        margin-bottom: 18px;
       }
 
       .eyebrow {
         font-size: 10px;
-        letter-spacing: 0.20em;
+        letter-spacing: 0.22em;
       }
 
       address {
@@ -245,6 +305,10 @@
 
       .contact a {
         font-size: 14px;
+      }
+
+      .hours p {
+        font-size: 12px;
       }
 
       .social {
@@ -261,6 +325,7 @@
     }
 
   </style>
+
 </head>
 
 <body>
@@ -269,14 +334,17 @@
 
     <main class="content">
 
-      <!-- LOGO NEOS OPTICAL -->
+      <!-- LOGO ORIGINALE NEOS OPTICAL -->
+
       <img
         src="logo-neos.png"
-        alt="NEOS Optical - Negozio di ottica a Chiaravalle"
+        alt="NÉOS Optical - Ottica a Chiaravalle"
         class="logo"
-        width="380">
+        width="380"
+        height="380">
 
       <!-- PRESENTAZIONE -->
+
       <h1 class="eyebrow">
         Ottica a Chiaravalle
       </h1>
@@ -284,6 +352,7 @@
       <div class="divider"></div>
 
       <!-- INDIRIZZO -->
+
       <address>
         Via Maestri del Lavoro 17<br>
         Parco La Manifattura<br>
@@ -292,6 +361,7 @@
       </address>
 
       <!-- TELEFONO ED EMAIL -->
+
       <div class="contact">
 
         <a href="tel:+390719945179">
@@ -304,23 +374,50 @@
 
       </div>
 
-      <!-- GOOGLE MAPS -->
+      <!-- GOOGLE MAPS DIRETTO -->
+
       <a
         class="maps"
-        href="https://www.google.com/maps/search/?api=1&amp;query=Via+Maestri+del+Lavoro+17+Chiaravalle+AN"
+        href="https://maps.app.goo.gl/JctXMoAmDjQ7G8V29"
         target="_blank"
-        rel="noopener noreferrer">
+        rel="noopener noreferrer"
+        aria-label="Trova NÉOS Optical su Google Maps">
         Come raggiungerci
       </a>
 
-      <!-- SOCIAL NETWORK -->
-      <nav class="social" aria-label="Social network">
+      <!-- ORARI DI APERTURA -->
+
+      <section class="hours">
+
+        <h2>Orari di apertura</h2>
+
+        <p>
+          Lunedì<br>
+          16:00 – 19:30
+        </p>
+
+        <p>
+          Da martedì a sabato<br>
+          09:30 – 12:45<br>
+          16:30 – 19:30
+        </p>
+
+        <p>
+          Domenica chiuso
+        </p>
+
+      </section>
+
+      <!-- INSTAGRAM E FACEBOOK -->
+
+      <nav class="social"
+           aria-label="Social network">
 
         <a
           href="https://www.instagram.com/neosoptical/"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="NEOS Optical su Instagram">
+          aria-label="NÉOS Optical su Instagram">
           Instagram
         </a>
 
@@ -328,7 +425,7 @@
           href="https://www.facebook.com/profile.php?id=61591669449663"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="NEOS Optical su Facebook">
+          aria-label="NÉOS Optical su Facebook">
           Facebook
         </a>
 
@@ -336,9 +433,12 @@
 
     </main>
 
-    <!-- FOOTER -->
+    <!-- PARTITA IVA E COPYRIGHT -->
+
     <footer>
-      © NEOS OPTICAL · CHIARAVALLE
+      NÉOS OPTICAL · CHIARAVALLE<br>
+      P. IVA 03042750426<br>
+      © 2026 NÉOS OPTICAL
     </footer>
 
   </div>
